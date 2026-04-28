@@ -1,0 +1,44 @@
+name: Release Sutura
+
+on:
+  push:
+    tags:
+      - 'v*' # Trigger only when a tag starting with 'v' is pushed (e.g., v1.0.0)
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    strategy:
+      matrix:
+        os: [windows-latest] # add macos-latest or ubuntu-latest later
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.14.1' # Using your specific dev version
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install --ignore-scripts --legacy-peer-deps
+
+      - name: Rebuild Native Modules
+        run: npm run rebuild:native
+
+      - name: Run Postinstall (Icons & native deps)
+        run: npm run postinstall
+
+      - name: Build & Publish
+        run: npm run build:win
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
