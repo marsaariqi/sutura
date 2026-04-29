@@ -10,6 +10,17 @@ Sutura
 
 ---
 
+## Supported Extensions
+
+Sutura supports 44 file extensions across various languages and formats:
+
+- **Web**: `.html`, `.htm`, `.css`, `.scss`, `.js`, `.jsx`, `.ts`, `.tsx`, `.vue`
+- **Languages**: `.java`, `.go`, `.py`, `.kt`, `.rs`, `.rb`, `.php`, `.cs`, `.swift`, `.lua`, `.scala`, `.hs`, `.r`, `.c`, `.cpp`, `.h`, `.hpp`, `.sql`, `.sh`, `.bash`, `.groovy`
+- **Data/Config**: `.json`, `.jsonc`, `.xml`, `.svg`, `.xsl`, `.xslt`, `.plist`, `.fxml`, `.xhtml`, `.yml`, `.yaml`, `.toml`, `.properties`
+- **Documentation**: `.md`
+
+---
+
 ## The Main Logic
 
 Sutura is built on four core technical pillars that allow it to safely translate massive codebases where regular expression tools fail:
@@ -99,6 +110,28 @@ $ npm run build:linux
 ```
 
 _Note: The standard `build` scripts automatically trigger the `rebuild:native` hook to ensure the compiled binary uses the correct Electron Node headers._
+
+---
+
+## Roadmap / TODO
+
+- [ ] **Sass Support**: Implement manual integration for [tree-sitter-sass](https://github.com/bajrangCoder/tree-sitter-sass).
+- [ ] **Custom Grammar Support**: Allow users to load custom Tree-sitter grammars (`.node` files) dynamically.
+- [ ] **Translation Memory**: Persistent cache of previously translated segments to save tokens and ensure consistency.
+- [ ] **Parallel Workspace Processing**: Open and translate multiple workspace folders simultaneously.
+- [ ] **Multi-Target Language**: Translate to multiple languages in a single pass (e.g., English, Japanese, and Korean).
+- [ ] **Plugin System**: Extensible architecture for custom post-processing hooks and terminology validators.
+
+---
+
+## Credits & Shoutouts
+
+A huge shoutout to the developers who maintain specialized Tree-sitter grammars and tools that make Sutura possible. Since the official Tree-sitter grammars don't cover everything, these community efforts are vital:
+
+- [nodejieba](https://github.com/yanyiwu/nodejieba) — Excellent C++ Chinese segmentation for glossary scanning.
+- [@derekstride/tree-sitter-sql](https://github.com/derekstride/tree-sitter-sql) — Robust SQL parsing.
+- [tree-sitter-vue](https://github.com/ikatyang/tree-sitter-vue) — Support for Vue Single File Components.
+- [tree-sitter-grammars](https://github.com/tree-sitter-grammars) — For the collective work on XML, YAML, and TOML support.
 
 ---
 

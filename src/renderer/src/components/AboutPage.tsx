@@ -697,7 +697,7 @@ export function AboutPage() {
                 Local-First Parsing
               </Badge>
               <Badge className="bg-purple-500/5 text-purple-600 dark:text-purple-400 border-purple-500/30 text-[10px] font-mono">
-                45+ Extensions
+                44 Extensions
               </Badge>
             </div>
           </div>
@@ -776,7 +776,7 @@ export function AboutPage() {
                 <code className="text-foreground/80">.git</code>,{' '}
                 <code className="text-foreground/80">node_modules</code>,{' '}
                 <code className="text-foreground/80">dist</code>, etc.). Each file is classified by
-                extension against a whitelist of 45+ supported extensions.
+                extension against a whitelist of 44 supported extensions.
               </p>
               <div className="flex gap-3 flex-wrap">
                 <div className="flex-1 min-w-50">
@@ -827,7 +827,8 @@ export function AboutPage() {
                       '.xhtml',
                       '.yml',
                       '.yaml',
-                      '.toml'
+                      '.toml',
+                      '.properties'
                     ].map((ext) => (
                       <Badge
                         key={ext}

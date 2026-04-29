@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Initial open-source release of Sutura.**
 - AST Parsing using `tree-sitter` for precise extraction of translatable nodes (`COMMENT` and `STRING_LITERAL`).
-- Support for over 45+ file extensions including embedded language parsing for Vue/HTML components.
+- Support for 44 file extensions including embedded language parsing for Vue/HTML components.
 - Advanced Token Optimization and Batch Orchestration engine (`TaskRunner`) featuring burst-mode parallelism and RPM limits.
 - Buffer-based Suture Injection System for accurate byte-range text replacements without modifying surrounding logic or formatting.
 - Native C++ Chinese tokenizer (`nodejieba`) for project-wide Terminology Glossary scanning and frequency mapping.
