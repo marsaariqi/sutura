@@ -117,6 +117,9 @@ $ npm run build:mac
 $ npm run build:linux
 ```
 
+> [!IMPORTANT]
+> **Windows Users:** Since Sutura is currently an unsigned open-source project, Windows SmartScreen may show a warning when running the installer (Unknown Publisher). To proceed, click **"More info"** and then **"Run anyway"**.
+
 _Note: The standard `build` scripts automatically trigger the `rebuild:native` hook to ensure the compiled binary uses the correct Electron Node headers._
 
 ---

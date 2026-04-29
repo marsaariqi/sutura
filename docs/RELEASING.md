@@ -56,6 +56,16 @@ git push origin v1.0.0
 - **Confirmation:** The build only happens when you decide a version is "Final" by tagging it.
 - **Native Stability:** Because this uses a Windows Runner, it correctly compiles the C++ modules (`nodejieba`, `tree-sitter`) so they work perfectly on the users' machines.
 
-## Security Note
+## Security Note (Windows SmartScreen)
 
-The workflow uses a built-in `${{ secrets.GITHUB_TOKEN }}`. You don't need to configure anything; GitHub provides this token automatically to allow the script to upload the installer to your releases.
+Because Sutura is an open-source project and the installer is **unsigned**, Windows users will see a "Microsoft Defender SmartScreen" warning when running the `.exe` for the first time.
+
+**To install Sutura:**
+1. Click **"More info"**.
+2. Click **"Run anyway"**.
+
+As the project gains more users and downloads, Microsoft's reputation system will eventually stop showing this warning. To remove it permanently, a paid Code Signing Certificate (EV Certificate) would be required.
+
+## Security Note (macOS)
+Similarly, on macOS, users may need to right-click the app and select "Open" or allow it in **System Settings > Privacy & Security** because the app is not notarized by an Apple Developer account.
+
