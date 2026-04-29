@@ -6,6 +6,24 @@
 Sutura
 </h1>
 
+<p align="center">
+  <a href="https://github.com/marsaariqi/sutura/releases">
+    <img src="https://img.shields.io/github/v/release/marsaariqi/sutura?color=orange&label=version&logo=github" alt="Current Version">
+  </a>
+  <a href="https://github.com/marsaariqi/sutura/actions/workflows/release.yml">
+    <img src="https://github.com/marsaariqi/sutura/actions/workflows/release.yml/badge.svg" alt="Build Status">
+  </a>
+  <a href="docs/ARCHITECTURE.md">
+    <img src="https://img.shields.io/badge/Architecture-docs%2FARCHITECTURE.md-blue?logo=mdbook&logoColor=white" alt="Architecture">
+  </a>
+  <a href="CHANGELOG.md">
+    <img src="https://img.shields.io/badge/Changelog-CHANGELOG.md-green?logo=gitbook&logoColor=white" alt="Changelog">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+  </a>
+</p>
+
 **Sutura** is a sophisticated Electron-based desktop application designed for **Surgical Codebase Translation & AST-based String Injection**. It intelligently scans entire codebases, extracts translatable text (like comments and string literals) using precise Abstract Syntax Tree (AST) parsing, translates them using various AI providers, and seamlessly injects the translations back into the source code without breaking the formatting or logic.
 
 ---
