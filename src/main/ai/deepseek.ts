@@ -9,7 +9,7 @@ import {
   parseTranslationResponse
 } from './provider'
 
-export const DEEPSEEK_MODEL = 'deepseek-chat'
+export const DEEPSEEK_MODEL = 'deepseek-v4-flash'
 
 export class DeepSeekProvider implements AIProvider {
   private apiKey: string

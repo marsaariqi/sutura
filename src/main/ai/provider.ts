@@ -22,8 +22,8 @@ export const DEFAULT_MODELS: Record<ProviderKey, ProviderModelInfo[]> = {
     { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash' }
   ],
   deepseek: [
-    { id: 'deepseek-chat', name: 'DeepSeek V3.2 Chat' },
-    { id: 'deepseek-reasoner', name: 'DeepSeek Reasoner' }
+    { id: 'deepseek-v4-flash', name: 'DeepSeek V4 Flash' },
+    { id: 'deepseek-v4-pro', name: 'DeepSeek V4 Pro' }
   ],
   openai: [
     { id: 'gpt-4.1-nano', name: 'GPT-4.1 Nano' },
