@@ -81,7 +81,7 @@ for (const pkg of NATIVE_PACKAGES) {
     execSync('npx node-gyp rebuild', {
       cwd: pkgDir,
       stdio: 'pipe',
-      timeout: 120_000
+      timeout: 300_000
     })
     console.log(`  OK     ${pkg}`)
   } catch (err) {
