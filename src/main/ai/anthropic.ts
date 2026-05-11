@@ -16,7 +16,7 @@ export class AnthropicProvider implements AIProvider {
 
   constructor(apiKey: string, model?: string, temperature?: number) {
     this.apiKey = apiKey
-    this.model = model || 'claude-sonnet-4-20250514'
+    this.model = model || 'claude-haiku-4-5-20251001'
     this.temperature = temperature ?? 0.3
   }
 
@@ -97,7 +97,7 @@ export class AnthropicProvider implements AIProvider {
       const client = new Anthropic({ apiKey: key })
       // Send a minimal request to verify the key
       await client.messages.create({
-        model: 'claude-3-5-haiku-20241022',
+        model: 'claude-haiku-4-5-20251001',
         max_tokens: 1,
         messages: [{ role: 'user', content: 'test' }]
       })

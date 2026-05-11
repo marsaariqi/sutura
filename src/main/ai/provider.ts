@@ -32,8 +32,8 @@ export const DEFAULT_MODELS: Record<ProviderKey, ProviderModelInfo[]> = {
     { id: 'gpt-4o-mini', name: 'GPT-4o Mini' }
   ],
   anthropic: [
-    { id: 'claude-sonnet-4-20250514', name: 'Claude Sonnet 4' },
-    { id: 'claude-3-5-haiku-20241022', name: 'Claude 3.5 Haiku' }
+    { id: 'claude-haiku-4-5-20251001', name: 'Claude 4.5 Haiku' },
+    { id: 'claude-sonnet-4-5-20250929', name: 'Claude 4.5 Sonnet' }
   ],
   ollama: [],
   llamacpp: []
