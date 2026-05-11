@@ -1,6 +1,6 @@
 {
   "name": "sutura",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Surgical Codebase Translation & AST-based String Injection",
   "license": "MIT",
   "main": "./out/main/index.js",

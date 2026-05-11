@@ -89,7 +89,7 @@ export function SettingsDialog() {
   const [isDirty, setIsDirty] = useState(false)
 
   // App version and updates
-  const [appVersion, setAppVersion] = useState<string>('1.0.0')
+  const [appVersion, setAppVersion] = useState<string>('1.0.1')
   const [checkingUpdate, setCheckingUpdate] = useState(false)
   const [updateVersion, setUpdateVersion] = useState<string | null>(null)
   const [downloadingUpdate, setDownloadingUpdate] = useState(false)
